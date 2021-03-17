@@ -1,3 +1,23 @@
+const createGetLiveNeighbours = (matrix) => (row, column) => {
+  let liveNeighbours = 0;
+  for (let i = -1; i < 2; i++) {
+    if (matrix[row - 1]?.[column + i]) {
+      liveNeighbours++;
+    }
+​
+    if (matrix[row + 1]?.[column + i]) {
+      liveNeighbours++;
+    }
+  }
+​
+  if (matrix[row]?.[column - 1]) {
+    liveNeighbours++;
+  }
+  if (matrix[row]?.[column + 1]) {
+    liveNeighbours++;
+  }
+​
+  return liveNeighbours;
 };
 ​
 const getCellNextState = (liveNeighbours, live) => {
