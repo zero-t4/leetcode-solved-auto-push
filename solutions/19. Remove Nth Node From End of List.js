@@ -31,6 +31,25 @@ const removeNthFromEnd = (head, n) => {
   return dummyHead.next;
 };
 ​
+const removeNthFromStart = (head, n) => {
+  const dummyHead = new ListNode(0);
+  dummyHead.next = head;
+​
+  let passed = 1;
+  let prev = dummyHead;
+  let pointer = dummyHead.next;
+​
+  while (passed !== n) {
+    passed++;
+    prev = pointer;
+    pointer = pointer.next;
+  }
+​
+  prev.next = prev.next.next;
+​
+  return dummyHead.next;
+};
+​
 // Test cases
 // function ListNode(val, next) {
 //   this.val = (val===undefined ? 0 : val)
@@ -46,4 +65,5 @@ const removeNthFromEnd = (head, n) => {
 //
 // console.log(removeNthFromEnd(six, 1));
 // console.log(removeNthFromEnd(one, 2));
+// console.log(removeNthFromStart(one, 1));
 // console.log(removeNthFromEnd(one, 3));
