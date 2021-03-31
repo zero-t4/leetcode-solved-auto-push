@@ -1,8 +1,8 @@
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
  * }
  */
 /**
@@ -10,27 +10,27 @@
  * @return {ListNode}
  */
 const reverseList = head => {
-  if (!head) {
-    return null;
+  if (!head) {
+    return null;
   }
-​
-  let reversedList = new ListNode(head.val, null);
-​
-  let fast = head.next;
-​
-  while (fast !== null) {
-    reversedList = new ListNode(fast.val, reversedList);
-​
-    fast = fast.next;
-  }
-​
-  return reversedList;
+
+  let reversedList = new ListNode(head.val, null);
+
+  let fast = head.next;
+
+  while (fast !== null) {
+    reversedList = new ListNode(fast.val, reversedList);
+
+    fast = fast.next;
+  }
+
+  return reversedList;
 };
-​
+
 // Test cases
 // function ListNode(val, next) {
-//   this.val = (val===undefined ? 0 : val)
-//   this.next = (next===undefined ? null : next)
+//   this.val = (val===undefined ? 0 : val)
+//   this.next = (next===undefined ? null : next)
 // }
 //
 // const six = new ListNode(6);

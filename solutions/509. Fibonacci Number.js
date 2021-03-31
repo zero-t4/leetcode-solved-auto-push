@@ -3,41 +3,41 @@
  * @return {number}
  */
 const fib = (n) => {
-  if (n === 0) {
-    return 0;
+  if (n === 0) {
+    return 0;
   }
-​
-  if (n === 1) {
-    return 1;
+
+  if (n === 1) {
+    return 1;
   }
-​
-  let result = 0;
-​
-  let prev = 1;
-  let prePrev = 0;
-​
-  for (let i = 2; i <= n; i++) {
-    result = prev + prePrev;
-​
-    prePrev = prev;
-    prev = result;
+
+  let result = 0;
+
+  let prev = 1;
+  let prePrev = 0;
+
+  for (let i = 2; i <= n; i++) {
+    result = prev + prePrev;
+
+    prePrev = prev;
+    prev = result;
   }
-​
-  return result;
+
+  return result;
 };
-​
+
 const fib_ = (n) => {
-  if (n === 0) {
-    return 0;
+  if (n === 0) {
+    return 0;
   }
-​
-  if (n === 1) {
-    return 1;
+
+  if (n === 1) {
+    return 1;
   }
-​
-  return fib_(n - 1) + fib_(n - 2);
+
+  return fib_(n - 1) + fib_(n - 2);
 };
-​
+
 // Test cases
 // console.assert(fib(0) === 0);
 // console.assert(fib(1) === 1);
@@ -46,7 +46,7 @@ const fib_ = (n) => {
 // console.assert(fib(4) === 3);
 // console.assert(fib(5) === 5);
 // console.assert(fib(6) === 8);
-​
+
 // console.assert(fib_(0) === 0, 'test 0 failed');
 // console.assert(fib_(1) === 1, 'test 1 failed');
 // console.assert(fib_(2) === 1, 'test 2 failed');

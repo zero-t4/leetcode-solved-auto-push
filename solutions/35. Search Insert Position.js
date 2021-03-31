@@ -4,24 +4,24 @@
  * @return {number}
  */
 const searchInsert = (nums, target) => {
-  let left = 0;
-  let right = nums.length - 1;
-​
-  while (left - 1 <  right) {
-    const i = Math.floor((left + right) / 2);
-​
-    if (nums[i] === target) {
-      return i
-    } else if (nums[i] > target) {
-      right = i - 1;
-    } else {
-      left = i + 1;
-    }
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left - 1 <  right) {
+    const i = Math.floor((left + right) / 2);
+
+    if (nums[i] === target) {
+      return i
+    } else if (nums[i] > target) {
+      right = i - 1;
+    } else {
+      left = i + 1;
+    }
   }
-​
-  return left;
+
+  return left;
 };
-​
+
 // Test cases
 // console.assert(searchInsert([1,3,5,6], 5) === 2, 'test 1 failed');
 // console.assert(searchInsert([1,3,5,6], 2) === 1, 'test 2 failed');

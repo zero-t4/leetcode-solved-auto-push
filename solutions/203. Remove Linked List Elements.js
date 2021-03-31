@@ -1,8 +1,8 @@
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
  * }
  */
 /**
@@ -11,46 +11,46 @@
  * @return {ListNode}
  */
 const removeElements = (head, val) => {
-  if (!head) {
-    return null;
+  if (!head) {
+    return null;
   }
-​
-  if (head.next === null && head.val === val) {
-    return null;
+
+  if (head.next === null && head.val === val) {
+    return null;
   }
-​
-  let newHead = head;
-​
-  while (head !== null && head.val === val) {
-    newHead = head.next;
-    head = head.next;
+
+  let newHead = head;
+
+  while (head !== null && head.val === val) {
+    newHead = head.next;
+    head = head.next;
   }
-​
-  if (head === null) {
-    return null;
+
+  if (head === null) {
+    return null;
   }
-​
-  let prevNode = newHead;
-​
-  let iterator = newHead.next;
-​
-  while (iterator !== null) {
-    if (iterator.val === val) {
-      prevNode.next = iterator.next;
-    } else {
-      prevNode = iterator;
-    }
-​
-    iterator = iterator.next;
+
+  let prevNode = newHead;
+
+  let iterator = newHead.next;
+
+  while (iterator !== null) {
+    if (iterator.val === val) {
+      prevNode.next = iterator.next;
+    } else {
+      prevNode = iterator;
+    }
+
+    iterator = iterator.next;
   }
-​
-  return newHead;
+
+  return newHead;
 };
-​
+
 // Test cases
 // function ListNode(val, next) {
-//   this.val = (val===undefined ? 0 : val)
-//   this.next = (next===undefined ? null : next)
+//   this.val = (val===undefined ? 0 : val)
+//   this.next = (next===undefined ? null : next)
 // }
 //
 // const six = new ListNode(6);

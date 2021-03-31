@@ -1,8 +1,8 @@
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
  * }
  */
 /**
@@ -11,49 +11,49 @@
  * @return {ListNode}
  */
 const removeNthFromEnd = (head, n) => {
-  const dummyHead = new ListNode(0);
-  dummyHead.next = head;
-​
-  let slow = dummyHead;
-  let fast = dummyHead;
-​
-  for (let i = 0; i <= n; i++) {
-    fast = fast.next;
+  const dummyHead = new ListNode(0);
+  dummyHead.next = head;
+
+  let slow = dummyHead;
+  let fast = dummyHead;
+
+  for (let i = 0; i <= n; i++) {
+    fast = fast.next;
   }
-​
-  while (fast !== null) {
-    fast = fast.next;
-    slow = slow.next;
+
+  while (fast !== null) {
+    fast = fast.next;
+    slow = slow.next;
   }
-​
-  slow.next = slow.next.next;
-​
-  return dummyHead.next;
+
+  slow.next = slow.next.next;
+
+  return dummyHead.next;
 };
-​
+
 const removeNthFromStart = (head, n) => {
-  const dummyHead = new ListNode(0);
-  dummyHead.next = head;
-​
-  let passed = 1;
-  let prev = dummyHead;
-  let pointer = dummyHead.next;
-​
-  while (passed !== n) {
-    passed++;
-    prev = pointer;
-    pointer = pointer.next;
+  const dummyHead = new ListNode(0);
+  dummyHead.next = head;
+
+  let passed = 1;
+  let prev = dummyHead;
+  let pointer = dummyHead.next;
+
+  while (passed !== n) {
+    passed++;
+    prev = pointer;
+    pointer = pointer.next;
   }
-​
-  prev.next = prev.next.next;
-​
-  return dummyHead.next;
+
+  prev.next = prev.next.next;
+
+  return dummyHead.next;
 };
-​
+
 // Test cases
 // function ListNode(val, next) {
-//   this.val = (val===undefined ? 0 : val)
-//   this.next = (next===undefined ? null : next)
+//   this.val = (val===undefined ? 0 : val)
+//   this.next = (next===undefined ? null : next)
 // }
 //
 // const six = new ListNode(6);
