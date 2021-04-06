@@ -1,65 +1,65 @@
 function ListNode(val, next) {
-  this.val = (val === undefined ? 0 : val)
-  this.next = (next === undefined ? null : next)
+  this.val = (val === undefined ? 0 : val)
+  this.next = (next === undefined ? null : next)
 }
-​
+
 const compose = (...fns) => fns.reduceRight(
   (prevFn, nextFn) => (...args) => nextFn(prevFn(...args)),
-  value => value
+  value => value
 );
-​
+
 const reverseList = (list) => {
-  let dummyEnd = new ListNode(list.val, null);
-​
-  let iterator1 = list.next;
-  let iterator2 = iterator1;
-​
-  while (iterator1 !== null) {
-    iterator1 = iterator1.next;
-    iterator2.next = dummyEnd;
-​
-    dummyEnd = iterator2;
-    iterator2 = iterator1;
+  let dummyEnd = new ListNode(list.val, null);
+
+  let iterator1 = list.next;
+  let iterator2 = iterator1;
+
+  while (iterator1 !== null) {
+    iterator1 = iterator1.next;
+    iterator2.next = dummyEnd;
+
+    dummyEnd = iterator2;
+    iterator2 = iterator1;
   }
-​
-  return dummyEnd;
+
+  return dummyEnd;
 };
-​
+
 const getStringNumber = (list) => {
-  let strNumber = '';
-​
-  while (list !== null) {
-    strNumber += list.val;
-​
-    list = list.next;
+  let strNumber = '';
+
+  while (list !== null) {
+    strNumber += list.val;
+
+    list = list.next;
   }
-​
-  return strNumber;
+
+  return strNumber;
 }
-​
+
 const sum = ([n1, n2]) => BigInt(n1) + BigInt(n2);
-​
+
 const map = (mapper) => (array) => array.map(mapper);
-​
+
 const numberToList = (number) => {
-  const strNumber = String(number).split('');
-​
-  let dummyEnd = new ListNode(+strNumber[strNumber.length - 1], null);
-​
-  for (let i = strNumber.length - 2; i >= 0; i--) {
-    dummyEnd = new ListNode(+strNumber[i], dummyEnd);
+  const strNumber = String(number).split('');
+
+  let dummyEnd = new ListNode(+strNumber[strNumber.length - 1], null);
+
+  for (let i = strNumber.length - 2; i >= 0; i--) {
+    dummyEnd = new ListNode(+strNumber[i], dummyEnd);
   }
-​
-  return dummyEnd;
+
+  return dummyEnd;
 }
-​
+
 const getReversedStringNumberFromList = compose(getStringNumber, reverseList);
-​
+
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
  * }
  */
 /**
@@ -68,19 +68,19 @@ const getReversedStringNumberFromList = compose(getStringNumber, reverseList);
  * @return {ListNode}
  */
 const addTwoNumbers = (l1, l2) => compose(
-  reverseList,
-  numberToList,
-  sum,
-  map(getReversedStringNumberFromList),
+  reverseList,
+  numberToList,
+  sum,
+  map(getReversedStringNumberFromList),
 )([l1, l2]);
-​
+
 // Plan:
 // 1. somehow reverse linked list 1
 // 2. somehow reverse linked list 2
 // 3. get numbers
 // 4. sum two numbers
 // 4. Split number by '' and reverse it back to ListNode
-​
+
 // Test cases
 // const three_1 = new ListNode(3);
 // const two_1 = new ListNode(2, three_1);
@@ -128,4 +128,4 @@ const addTwoNumbers = (l1, l2) => compose(
 // const _6 = new ListNode(6, _4);
 // const _5 = new ListNode(5, _6);
 // console.log(addTwoNumbers(_1, _5));
-​
+
