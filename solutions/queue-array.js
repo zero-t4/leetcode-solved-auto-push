@@ -1,10 +1,10 @@
 function MyQueueSized(maxCommandCount, maxQueueSize) {
   if (maxCommandCount > 5000) {
-    return 'Количество команд, оно не превосходить 5000';
+    return 'max commands count is 5000';
   }
 
   if (maxQueueSize > 5000) {
-    return 'Максимально допустимый размер очереди, он не превосходит 5000.';
+    return 'max queue size is 5000';
   }
 
   let counter = 0;
@@ -37,6 +37,8 @@ function MyQueueSized(maxCommandCount, maxQueueSize) {
       const n = queue[head];
 
       if (n !== undefined) {
+        queue[head] = undefined;
+
         head = head === maxQueueSize ? 0 : head + 1;
       }
 
@@ -80,3 +82,15 @@ queue('push 1'); //
 queue('pop');    // 1
 queue('push 3'); //
 queue('push 3'); // error
+
+// custom test
+queue = MyQueueSized(10, 4);
+queue('push 1'); //
+queue('push 2'); //
+queue('push 3'); //
+queue('pop');    // 1
+queue('pop');    // 2
+queue('push 4'); //
+queue('push 5'); //
+queue('push 6'); //
+queue('push 7'); // error
