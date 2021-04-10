@@ -25,6 +25,7 @@
 |236|[ Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[JavaScript](./solutions/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.js)|92 ms|
 |238|[ Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[JavaScript](./solutions/238.%20Product%20of%20Array%20Except%20Self.js)|128 ms|
 |240|[ Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[JavaScript](./solutions/240.%20Search%20a%202D%20Matrix%20II.js)|4796 ms|
+|242|[ Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[JavaScript](./solutions/242.%20Valid%20Anagram.js)|88 ms|
 |283|[ Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[JavaScript](./solutions/283.%20Move%20Zeroes.js)|80 ms|
 |289|[ Game of Life](https://leetcode.com/problems/game-of-life/)|[JavaScript](./solutions/289.%20Game%20of%20Life.js)|80 ms|
 |297|[ Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[JavaScript](./solutions/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.js)|112 ms|
