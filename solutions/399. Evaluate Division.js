@@ -44,17 +44,17 @@ const calcEquation = (equations, values, queries) => {
       node: equations[i][1],
     });
 ​
+    let childNode = graphs[equations[i][1]] || new GraphNode(equations[i][1]);
+    childNode.children.push({
+      visited: {
+        // [iteration key]: bool
+      },
+      relation: 1 / values[i],
+      node: equations[i][0],
+    });
+​
     graphs[equations[i][0]] = node;
-    graphs[equations[i][1]] = new GraphNode(
-      equations[i][1],
-      [{
-        visited: {
-          // [iteration key]: bool
-        },
-        relation: 1 / values[i],
-        node: equations[i][0],
-      }],
-    );
+    graphs[equations[i][1]] = childNode;
   }
 ​
   return queries.map(([a, b], i) => {
