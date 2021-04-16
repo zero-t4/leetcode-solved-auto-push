@@ -35,3 +35,4 @@
 |547|[ Number of Provinces](https://leetcode.com/problems/number-of-provinces/)|[JavaScript](./solutions/547.%20Number%20of%20Provinces.js)|76 ms|
 |704|[ Binary Search](https://leetcode.com/problems/binary-search/)|[JavaScript](./solutions/704.%20Binary%20Search.js)|80 ms|
 |739|[ Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[JavaScript](./solutions/739.%20Daily%20Temperatures.js)|164 ms|
+|1192|[ Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|[JavaScript](./solutions/1192.%20Critical%20Connections%20in%20a%20Network.js)|840 ms|
