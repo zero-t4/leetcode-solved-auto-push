@@ -32,5 +32,6 @@
 |297|[ Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[JavaScript](./solutions/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.js)|112 ms|
 |399|[ Evaluate Division](https://leetcode.com/problems/evaluate-division/)|[JavaScript](./solutions/399.%20Evaluate%20Division.js)|80 ms|
 |509|[ Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|[JavaScript](./solutions/509.%20Fibonacci%20Number.js)|76 ms|
+|547|[ Number of Provinces](https://leetcode.com/problems/number-of-provinces/)|[JavaScript](./solutions/547.%20Number%20of%20Provinces.js)|76 ms|
 |704|[ Binary Search](https://leetcode.com/problems/binary-search/)|[JavaScript](./solutions/704.%20Binary%20Search.js)|80 ms|
 |739|[ Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[JavaScript](./solutions/739.%20Daily%20Temperatures.js)|164 ms|
