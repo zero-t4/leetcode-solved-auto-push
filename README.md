@@ -35,6 +35,7 @@
 |399|[ Evaluate Division](https://leetcode.com/problems/evaluate-division/)|[JavaScript](./solutions/399.%20Evaluate%20Division.js)|80 ms|
 |509|[ Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|[JavaScript](./solutions/509.%20Fibonacci%20Number.js)|76 ms|
 |547|[ Number of Provinces](https://leetcode.com/problems/number-of-provinces/)|[JavaScript](./solutions/547.%20Number%20of%20Provinces.js)|76 ms|
+|695|[ Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|[JavaScript](./solutions/695.%20Max%20Area%20of%20Island.js)|96 ms|
 |704|[ Binary Search](https://leetcode.com/problems/binary-search/)|[JavaScript](./solutions/704.%20Binary%20Search.js)|80 ms|
 |739|[ Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[JavaScript](./solutions/739.%20Daily%20Temperatures.js)|164 ms|
 |994|[ Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[JavaScript](./solutions/994.%20Rotting%20Oranges.js)|96 ms|
