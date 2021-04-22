@@ -38,6 +38,7 @@
 |695|[ Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|[JavaScript](./solutions/695.%20Max%20Area%20of%20Island.js)|96 ms|
 |704|[ Binary Search](https://leetcode.com/problems/binary-search/)|[JavaScript](./solutions/704.%20Binary%20Search.js)|80 ms|
 |739|[ Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[JavaScript](./solutions/739.%20Daily%20Temperatures.js)|164 ms|
+|785|[ Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)|[JavaScript](./solutions/785.%20Is%20Graph%20Bipartite%3F.js)|84 ms|
 |994|[ Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[JavaScript](./solutions/994.%20Rotting%20Oranges.js)|96 ms|
 |997|[ Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[JavaScript](./solutions/997.%20Find%20the%20Town%20Judge.js)|280 ms|
 |1192|[ Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|[JavaScript](./solutions/1192.%20Critical%20Connections%20in%20a%20Network.js)|840 ms|
