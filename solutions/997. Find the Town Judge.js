@@ -9,8 +9,7 @@ const findJudge = (N, trust) => {
   const g = Array.from({ length: N }, () => new Set());
 
   for (let [person, trustPerson] of trust) {
-    g[trustPerson] = (g[trustPerson] || new Set()).add(person);
-    g[person] = g[person] || new Set();
+    g[trustPerson] = g[trustPerson].add(person);
   }
 
   for (let i = 1; i < g.length; i++) {
