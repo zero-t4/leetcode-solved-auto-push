@@ -3,6 +3,12 @@
  * @return {number}
  */
 const orangesRotting = (grid) => {
+  /**
+   * Definitions:
+   * 0 - empty cell
+   * 1 - normall orange
+   * 2 - rotting orange
+   */
   let twos = [];
   let totalNumber = 0;
   grid.forEach((row, r) => row.forEach((col, c) => {
