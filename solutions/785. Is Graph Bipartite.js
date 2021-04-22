@@ -13,7 +13,7 @@ const isBipartite = (graph) => {
       dfs(node);
     }
   } catch(e) {
-    // isDefinitelyNotBipartite
+    // definitely not bipartite
     return false;
   }
 ​
