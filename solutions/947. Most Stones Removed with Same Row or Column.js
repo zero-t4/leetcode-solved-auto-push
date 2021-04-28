@@ -3,56 +3,67 @@
  * @return {number}
  */
 const removeStones = (stones) => {
-  let numberOfRemovedStones = stones.length;
-  const groups = [];
+  const parents = Array.from({ length: stones.length }, (_, i) => i);
+  const sizes = Array.from({ length: stones.length }, () => 1);
+  let removedStones = 0;
 ​
-  const find = (x) => {
-    if (groups[x] !== x) {
-      return find(groups[x]);
+  const get = (x) => {
+    if (parents[x] === x) {
+      return x;
     }
+    parents[x] = get(parents[x]);
 ​
-    return x;
+    return parents[x];
   }
 ​
-  const union = (x, y) => {
-    const xPar = find(x);
-    const yPar = find(y);
+  const merge = (a, b) => {
+    const pA = get(a);
+    const pB = get(b);
 ​
-    if (xPar !== yPar) {
-      groups[xPar] = yPar;
-      numberOfRemovedStones -= 1;
+    if (pA === pB) {
+      return;
     }
+​
+    if (sizes[pB] > sizes[pA]) {
+      sizes[pB] += sizes[pA];
+      parents[pA] = pB;
+    } else {
+      sizes[pA] += sizes[pB];
+      parents[pB] = pA;
+    }
+  }
+​
+  const isMerged = (a, b) => {
+    const pA = get(a);
+    const pB = get(b);
+​
+    return pA === pB;
   }
 ​
   for (let i = 0; i < stones.length; i++) {
-    groups[i] = i;
-  }
-​
-  for (let index = 1; index < stones.length; index++) {
-    const stone = stones[index];
-​
-    for (let prevIndex = 0; prevIndex < index; prevIndex++) {
-      const prevStone = stones[prevIndex];
-​
-      if (stone[0] !== prevStone[0] && stone[1] !== prevStone[1]) {
+    for (let j = i + 1; j < stones.length; j++) {
+      if (isMerged(i, j)) {
         continue;
       }
 ​
-      if (groups[index] === index) {
-        groups[index] = prevIndex;
-        numberOfRemovedStones -= 1;
-      } else {
-        union(index, prevIndex);
+      if (stones[i][0] === stones[j][0]) {
+        // equal by row
+        merge(i, j);
+        removedStones++;
+      } else if (stones[i][1] === stones[j][1]) {
+        // equal by column
+        merge(i, j);
+        removedStones++;
       }
     }
   }
 ​
-  return stones.length - numberOfRemovedStones;
-};
+  return removedStones;
+}
 ​
 // Test cases
 // console.log(removeStones([[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]])); // 5
 // console.log(removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]])); // 3
 // console.log(removeStones([[0,0]])); // 0
-// console.log(removeStones([[1, 2], [1, 3], [3, 3], [3, 1], [2, 1], [1, 0]])); // 5
+// console.log(removeStones([[1, 2], [1, 3], [3, 3], [3, 1], [2, 1], [1, 0]])); // 0
 ​
