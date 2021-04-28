@@ -3,48 +3,56 @@
  * @return {number}
  */
 const removeStones = (stones) => {
-  let max = -Infinity;
+  let numberOfRemovedStones = stones.length;
+  const groups = [];
 ​
-  for (let [row, column] of stones) {
-    max = Math.max(row, column, max);
-  }
-​
-  const g = Array.from({ length: (max + 1) * 2 }, (_, i) => i);
-​
-  const plane = Array.from({ length: (max + 1) * 2 }, () => 0);
-​
-  function find(node) {
-    if (g[node] !== node) {
-      g[node] = find(g[node]);
+  const find = (x) => {
+    if (groups[x] !== x) {
+      return find(groups[x]);
     }
 ​
-    return g[node];
+    return x;
   }
 ​
-  function union(leftNode, rightNode) {
-    let left = find(leftNode);
-    let right = find(rightNode);
+  const union = (x, y) => {
+    const xPar = find(x);
+    const yPar = find(y);
 ​
-    if (plane[left] === plane[right]) {
-      g[right] = left;
-      plane[left] = plane[left] + 1;
-    } else if (plane[left] < plane[right]) {
-      g[left] = right;
-    } else {
-      g[right] = left;
+    if (xPar !== yPar) {
+      groups[xPar] = yPar;
+      numberOfRemovedStones -= 1;
     }
   }
 ​
-  for (let [row, column] of stones) {
-    union(row, column + max + 1);
+  for (let i = 0; i < stones.length; i++) {
+    groups[i] = i;
   }
 ​
-  const set = new Set();
+  for (let index = 1; index < stones.length; index++) {
+    const stone = stones[index];
 ​
-  for (let [row] of stones) {
-    set.add(find(row));
+    for (let prevIndex = 0; prevIndex < index; prevIndex++) {
+      const prevStone = stones[prevIndex];
+​
+      if (stone[0] !== prevStone[0] && stone[1] !== prevStone[1]) {
+        continue;
+      }
+​
+      if (groups[index] === index) {
+        groups[index] = prevIndex;
+        numberOfRemovedStones -= 1;
+      } else {
+        union(index, prevIndex);
+      }
+    }
   }
 ​
-  return stones.length - set.size;
+  return stones.length - numberOfRemovedStones;
 };
+​
+// Test cases
+// console.log(removeStones([[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]])); // 5
+// console.log(removeStones([[0,0],[0,2],[1,1],[2,0],[2,2]])); // 3
+// console.log(removeStones([[0,0]])); // 0
+// console.log(removeStones([[1, 2], [1, 3], [3, 3], [3, 1], [2, 1], [1, 0]])); // 5
 ​
