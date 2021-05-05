@@ -40,7 +40,7 @@ const numSimilarGroups = (strs) => {
    * End of DSU declaration
    */
 ​
-  const wordsHasEnoughCommonChars = (a, b) => {
+  const wordsHaveEnoughCommonChars = (a, b) => {
     let diffCharCount = 0;
 ​
     for (let i = 0; i < a.length; i++) {
@@ -54,14 +54,14 @@ const numSimilarGroups = (strs) => {
 ​
   for (let i = 0; i < strs.length; i++) {
     for (let j = i + 1; j < strs.length; j++) {
-      if (wordsHasEnoughCommonChars(strs[i], strs[j])) {
+      if (wordsHaveEnoughCommonChars(strs[i], strs[j])) {
         merge(i, j);
-      }
+      }
     }
   }
 ​
   for (let i = 0; i < parents.length; i++) {
-    merge(i, i);
+    get(i);
   }
 ​
   return getNumberOfSets();
