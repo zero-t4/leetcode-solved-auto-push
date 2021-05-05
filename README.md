@@ -40,7 +40,7 @@
 |695|[ Max Area of Island](https://leetcode.com/problems/max-area-of-island/)|[JavaScript](./solutions/695.%20Max%20Area%20of%20Island.js)|96 ms|
 |704|[ Binary Search](https://leetcode.com/problems/binary-search/)|[JavaScript](./solutions/704.%20Binary%20Search.js)|80 ms|
 |739|[ Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)|[JavaScript](./solutions/739.%20Daily%20Temperatures.js)|164 ms|
-|743|[ Network Delay Time](https://leetcode.com/problems/network-delay-time/)|[JavaScript](./solutions/743.%20Network%20Delay%20Time.js)|104 ms|
+|743|[ Network Delay Time](https://leetcode.com/problems/network-delay-time/)|[JavaScript](./solutions/743.%20Network%20Delay%20Time.js)|108 ms|
 |765|[ Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)|[JavaScript](./solutions/765.%20Couples%20Holding%20Hands.js)|84 ms|
 |785|[ Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)|[JavaScript](./solutions/785.%20Is%20Graph%20Bipartite%3F.js)|84 ms|
 |947|[ Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)|[JavaScript](./solutions/947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column.js)|368 ms|
