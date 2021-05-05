@@ -32,6 +32,7 @@
 |242|[ Valid Anagram](https://leetcode.com/problems/valid-anagram/)|[JavaScript](./solutions/242.%20Valid%20Anagram.js)|88 ms|
 |283|[ Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[JavaScript](./solutions/283.%20Move%20Zeroes.js)|80 ms|
 |289|[ Game of Life](https://leetcode.com/problems/game-of-life/)|[JavaScript](./solutions/289.%20Game%20of%20Life.js)|80 ms|
+|295|[ Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)|[JavaScript](./solutions/295.%20Find%20Median%20from%20Data%20Stream.js)|248 ms|
 |297|[ Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|[JavaScript](./solutions/297.%20Serialize%20and%20Deserialize%20Binary%20Tree.js)|112 ms|
 |399|[ Evaluate Division](https://leetcode.com/problems/evaluate-division/)|[JavaScript](./solutions/399.%20Evaluate%20Division.js)|80 ms|
 |509|[ Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)|[JavaScript](./solutions/509.%20Fibonacci%20Number.js)|76 ms|
