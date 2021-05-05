@@ -7,13 +7,13 @@
 const networkDelayTime = (times, n, k) => {
   const timeToEachNode = Array.from({ length: n + 1 }, (_, i) => i === k ? 0 : Infinity);
 ​
-  let hasTimeToEachNodeChanges = true;
+  let timeTravelToEachNodeChanged = true;
   for (let i = 1; i < n; i++) {
-    if (!hasTimeToEachNodeChanges) {
+    if (!timeTravelToEachNodeChanged) {
       break;
     }
 ​
-    hasTimeToEachNodeChanges = false
+    timeTravelToEachNodeChanged = false
 ​
     for (const [sourceNode, targetNode, signalTimeToTravel] of times) {
       if (timeToEachNode[sourceNode] === Infinity) {
@@ -21,7 +21,7 @@ const networkDelayTime = (times, n, k) => {
       }
 ​
       if (timeToEachNode[targetNode] > timeToEachNode[sourceNode] + signalTimeToTravel) {
-        hasTimeToEachNodeChanges = true;
+        timeTravelToEachNodeChanged = true;
 ​
         timeToEachNode[targetNode] = timeToEachNode[sourceNode] + signalTimeToTravel;
       }
