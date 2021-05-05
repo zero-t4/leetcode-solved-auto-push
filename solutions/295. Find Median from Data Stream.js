@@ -15,19 +15,19 @@ MedianFinder.prototype.addNum = function (num) {
     return;
   }
 ​
-  let l = 0;
-  let r = this.data.length;
+  let left = 0;
+  let right = this.data.length;
 ​
-  while (l < r) {
-    const mid = Math.floor((l + r) / 2);
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
     if (num > this.data[mid]) {
-      l = mid + 1;
+      left = mid + 1;
     } else {
-      r = mid;
+      right = mid;
     }
   }
 ​
-  this.data.splice(l, 0, num);
+  this.data.splice(left, 0, num);
 };
 ​
 /**
@@ -58,3 +58,4 @@ MedianFinder.prototype.findMedian = function () {
 // medianFinder.findMedian(); // return 1.5 (i.e., (1 + 2) / 2)
 // medianFinder.addNum(3);    // arr[1, 2, 3]
 // medianFinder.findMedian(); // return 2.0
+​
