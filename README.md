@@ -43,7 +43,7 @@
 |743|[ Network Delay Time](https://leetcode.com/problems/network-delay-time/)|[JavaScript](./solutions/743.%20Network%20Delay%20Time.js)|108 ms|
 |765|[ Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/)|[JavaScript](./solutions/765.%20Couples%20Holding%20Hands.js)|84 ms|
 |785|[ Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)|[JavaScript](./solutions/785.%20Is%20Graph%20Bipartite%3F.js)|84 ms|
-|839|[ Similar String Groups](https://leetcode.com/problems/similar-string-groups/)|[JavaScript](./solutions/839.%20Similar%20String%20Groups.js)|188 ms|
+|839|[ Similar String Groups](https://leetcode.com/problems/similar-string-groups/)|[JavaScript](./solutions/839.%20Similar%20String%20Groups.js)|196 ms|
 |947|[ Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)|[JavaScript](./solutions/947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column.js)|368 ms|
 |994|[ Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[JavaScript](./solutions/994.%20Rotting%20Oranges.js)|96 ms|
 |997|[ Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[JavaScript](./solutions/997.%20Find%20the%20Town%20Judge.js)|280 ms|
