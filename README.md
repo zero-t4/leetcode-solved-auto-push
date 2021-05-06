@@ -46,6 +46,7 @@
 |785|[ Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)|[JavaScript](./solutions/785.%20Is%20Graph%20Bipartite%3F.js)|84 ms|
 |839|[ Similar String Groups](https://leetcode.com/problems/similar-string-groups/)|[JavaScript](./solutions/839.%20Similar%20String%20Groups.js)|196 ms|
 |947|[ Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)|[JavaScript](./solutions/947.%20Most%20Stones%20Removed%20with%20Same%20Row%20or%20Column.js)|368 ms|
+|973|[ K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)|[JavaScript](./solutions/973.%20K%20Closest%20Points%20to%20Origin.js)|324 ms|
 |994|[ Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[JavaScript](./solutions/994.%20Rotting%20Oranges.js)|96 ms|
 |997|[ Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[JavaScript](./solutions/997.%20Find%20the%20Town%20Judge.js)|280 ms|
 |1192|[ Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|[JavaScript](./solutions/1192.%20Critical%20Connections%20in%20a%20Network.js)|840 ms|
