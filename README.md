@@ -13,6 +13,7 @@
 |56|[ Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[JavaScript](./solutions/56.%20Merge%20Intervals.js)|92 ms|
 |70|[ Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[JavaScript](./solutions/70.%20Climbing%20Stairs.js)|68 ms|
 |71|[ Simplify Path](https://leetcode.com/problems/simplify-path/)|[JavaScript](./solutions/71.%20Simplify%20Path.js)|96 ms|
+|77|[ Combinations](https://leetcode.com/problems/combinations/)|[JavaScript](./solutions/77.%20Combinations.js)|N/A|
 |102|[ Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[JavaScript](./solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal.js)|80 ms|
 |104|[ Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[JavaScript](./solutions/104.%20Maximum%20Depth%20of%20Binary%20Tree.js)|88 ms|
 |110|[ Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|[JavaScript](./solutions/110.%20Balanced%20Binary%20Tree.js)|92 ms|
