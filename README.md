@@ -11,6 +11,7 @@
 |53|[ Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[JavaScript](./solutions/53.%20Maximum%20Subarray.js)|84 ms|
 |54|[ Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[JavaScript](./solutions/54.%20Spiral%20Matrix.js)|80 ms|
 |56|[ Merge Intervals](https://leetcode.com/problems/merge-intervals/)|[JavaScript](./solutions/56.%20Merge%20Intervals.js)|92 ms|
+|70|[ Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[JavaScript](./solutions/70.%20Climbing%20Stairs.js)|68 ms|
 |71|[ Simplify Path](https://leetcode.com/problems/simplify-path/)|[JavaScript](./solutions/71.%20Simplify%20Path.js)|96 ms|
 |102|[ Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[JavaScript](./solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal.js)|80 ms|
 |104|[ Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|[JavaScript](./solutions/104.%20Maximum%20Depth%20of%20Binary%20Tree.js)|88 ms|
