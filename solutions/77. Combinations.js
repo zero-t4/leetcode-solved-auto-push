@@ -13,9 +13,7 @@ const combine = (n, k) => {
     }
 ​
     for (let i = low; i < n + 1; i++) {
-      trying.push(i);
-      bt(i + 1, trying);
-      trying.pop();
+      bt(i + 1, [...trying, i]);
     }
   };
 ​
