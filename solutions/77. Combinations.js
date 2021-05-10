@@ -8,12 +8,14 @@ const combine = (n, k) => {
 ​
   const bt = (low, trying) => {
     if (trying.length === k) {
-      res.push(trying);
+      res.push(Array.from(trying));
       return;
     }
 ​
     for (let i = low; i < n + 1; i++) {
-      bt(i + 1, [...trying, i]);
+      trying.push(i);
+      bt(i + 1, trying);
+      trying.pop();
     }
   };
 ​
