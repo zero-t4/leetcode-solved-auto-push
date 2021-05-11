@@ -3,14 +3,13 @@
  * @return {string[]}
  */
 const letterCombinations = (digits) => {
-  if (digits.length === 0) {
+  const l = digits.length;
+​
+  if (l === 0) {
     return [];
   }
 ​
   const result = [];
-​
-  const digitsArray = digits.split('');
-  const k = digits.length;
 ​
   const mapping = {
     2: ['a', 'b', 'c'],
@@ -24,7 +23,7 @@ const letterCombinations = (digits) => {
   };
 ​
   function bt(index, str) {
-    if (str.length === k) {
+    if (str.length === l) {
       result.push(str);
       return;
     }
@@ -36,7 +35,6 @@ const letterCombinations = (digits) => {
 ​
       str = str.slice(0, -1);
     }
-​
   }
 ​
   bt(0, '');
@@ -47,5 +45,5 @@ const letterCombinations = (digits) => {
 // Test cases
 // console.log(letterCombinations("23")); // ["ad","ae","af","bd","be","bf","cd","ce","cf"]
 // console.log(letterCombinations("2")); // ["a","b","c"]
-// console.log(letterCombinations("234")); // ["a","b","c"]
+// console.log(letterCombinations("234")); // ['adg','adh','adi','aeg','aeh','aei','afg','afh','afi','bdg','bdh','bdi','beg','beh','bei','bfg','bfh','bfi','cdg','cdh','cdi','ceg','ceh','cei','cfg','cfh','cfi']
 ​
