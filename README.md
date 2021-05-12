@@ -9,6 +9,7 @@
 |22|[ Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[JavaScript](./solutions/22.%20Generate%20Parentheses.js)|76 ms|
 |33|[ Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[JavaScript](./solutions/33.%20Search%20in%20Rotated%20Sorted%20Array.js)|84 ms|
 |35|[ Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[JavaScript](./solutions/35.%20Search%20Insert%20Position.js)|72 ms|
+|39|[ Combination Sum](https://leetcode.com/problems/combination-sum/)|[JavaScript](./solutions/39.%20Combination%20Sum.js)|96 ms|
 |46|[ Permutations](https://leetcode.com/problems/permutations/)|[JavaScript](./solutions/46.%20Permutations.js)|180 ms|
 |53|[ Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|[JavaScript](./solutions/53.%20Maximum%20Subarray.js)|84 ms|
 |54|[ Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[JavaScript](./solutions/54.%20Spiral%20Matrix.js)|80 ms|
