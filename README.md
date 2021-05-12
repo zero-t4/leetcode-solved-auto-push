@@ -4,6 +4,7 @@
 |---| ----- | -------- | ------- |
 |1|[ Two Sum](https://leetcode.com/problems/two-sum/)|[JavaScript](./solutions/1.%20Two%20Sum.js)|76 ms|
 |2|[ Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[JavaScript](./solutions/2.%20Add%20Two%20Numbers.js)|136 ms|
+|10|[ Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|[JavaScript](./solutions/10.%20Regular%20Expression%20Matching.js)|440 ms|
 |17|[ Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[JavaScript](./solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|84 ms|
 |19|[ Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[JavaScript](./solutions/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.js)|84 ms|
 |22|[ Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[JavaScript](./solutions/22.%20Generate%20Parentheses.js)|76 ms|
