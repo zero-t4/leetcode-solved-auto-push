@@ -1,9 +1,3 @@
-// Plan:
-// 1. Create `perfectSquares` array from 1 to 9999
-// 2. Find nearest perfect square to `n`
-// 3. Iterate over zeroth perfect square to found one
-// 4. Find a min number of perfect square sums to create `n` num/
-​
 // 1. Create `perfectSquares` array from 1 to 9999
 const perfectSquares = [];
 ​
@@ -21,14 +15,6 @@ const binarySearchRange = (left, right, val) => {
 ​
   if (perfectSquares[mid] === val) {
     return [mid, mid];
-  }
-​
-  if (perfectSquares[mid + 1] === val) {
-    return [mid + 1, mid + 1];
-  }
-​
-  if (perfectSquares[mid - 1] === val) {
-    return [mid - 1, mid - 1];
   }
 ​
   if (perfectSquares[mid] > val) {
