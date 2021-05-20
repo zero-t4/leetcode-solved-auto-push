@@ -33,7 +33,7 @@
 |206|[ Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[JavaScript](./solutions/206.%20Reverse%20Linked%20List.js)|80 ms|
 |207|[ Course Schedule](https://leetcode.com/problems/course-schedule/)|[JavaScript](./solutions/207.%20Course%20Schedule.js)|100 ms|
 |210|[ Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|[JavaScript](./solutions/210.%20Course%20Schedule%20II.js)|100 ms|
-|221|[ Maximal Square](https://leetcode.com/problems/maximal-square/)|[JavaScript](./solutions/221.%20Maximal%20Square.js)|104 ms|
+|221|[ Maximal Square](https://leetcode.com/problems/maximal-square/)|[JavaScript](./solutions/221.%20Maximal%20Square.js)|100 ms|
 |226|[ Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)|[JavaScript](./solutions/226.%20Invert%20Binary%20Tree.js)|72 ms|
 |236|[ Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|[JavaScript](./solutions/236.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Tree.js)|92 ms|
 |238|[ Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)|[JavaScript](./solutions/238.%20Product%20of%20Array%20Except%20Self.js)|128 ms|
