@@ -20,6 +20,7 @@
 |64|[ Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|[JavaScript](./solutions/64.%20Minimum%20Path%20Sum.js)|84 ms|
 |70|[ Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)|[JavaScript](./solutions/70.%20Climbing%20Stairs.js)|68 ms|
 |71|[ Simplify Path](https://leetcode.com/problems/simplify-path/)|[JavaScript](./solutions/71.%20Simplify%20Path.js)|96 ms|
+|76|[ Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[JavaScript](./solutions/76.%20Minimum%20Window%20Substring.js)|88 ms|
 |77|[ Combinations](https://leetcode.com/problems/combinations/)|[JavaScript](./solutions/77.%20Combinations.js)|116 ms|
 |96|[ Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)|[JavaScript](./solutions/96.%20Unique%20Binary%20Search%20Trees.js)|68 ms|
 |102|[ Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|[JavaScript](./solutions/102.%20Binary%20Tree%20Level%20Order%20Traversal.js)|80 ms|
