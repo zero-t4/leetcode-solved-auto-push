@@ -68,3 +68,4 @@
 |994|[ Rotting Oranges](https://leetcode.com/problems/rotting-oranges/)|[JavaScript](./solutions/994.%20Rotting%20Oranges.js)|96 ms|
 |997|[ Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)|[JavaScript](./solutions/997.%20Find%20the%20Town%20Judge.js)|280 ms|
 |1192|[ Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|[JavaScript](./solutions/1192.%20Critical%20Connections%20in%20a%20Network.js)|840 ms|
+|1631|[ Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)|[JavaScript](./solutions/1631.%20Path%20With%20Minimum%20Effort.js)|180 ms|
