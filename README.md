@@ -9,6 +9,7 @@
 |17|[ Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)|[JavaScript](./solutions/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.js)|84 ms|
 |19|[ Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[JavaScript](./solutions/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.js)|84 ms|
 |22|[ Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)|[JavaScript](./solutions/22.%20Generate%20Parentheses.js)|76 ms|
+|28|[ Implement strStr()](https://leetcode.com/problems/implement-strstr/)|[JavaScript](./solutions/28.%20Implement%20strStr().js)|84 ms|
 |33|[ Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|[JavaScript](./solutions/33.%20Search%20in%20Rotated%20Sorted%20Array.js)|84 ms|
 |35|[ Search Insert Position](https://leetcode.com/problems/search-insert-position/)|[JavaScript](./solutions/35.%20Search%20Insert%20Position.js)|72 ms|
 |39|[ Combination Sum](https://leetcode.com/problems/combination-sum/)|[JavaScript](./solutions/39.%20Combination%20Sum.js)|96 ms|
